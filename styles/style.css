@@ -47,7 +47,7 @@
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
-.content { 
+.content {
   margin-block-start: 100px;
 }
 
@@ -135,7 +135,6 @@
   width: 38px;
   height: 38px;
   background-color: transparent;
-  border: none;
   padding: 0;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
@@ -237,8 +236,7 @@
 }
 
 .image_eight {
-  filter: sepia(80%);
-  filter: contrast(200%);
+  filter: sepia(80%) contrast(200%);
 }
 
 .save_button {
