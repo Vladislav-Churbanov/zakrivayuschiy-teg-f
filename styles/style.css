@@ -89,7 +89,6 @@
   padding-inline-start: 10px;
   padding-inline-end: 5px;
   font-variation-settings: "wght" var(--title-font-weight);
-  
 }
 
 .card_text {
@@ -122,7 +121,6 @@
 .button:focus {
   outline: none;
   box-shadow: 2px 2px #000000;
-  
 }
 
 .button::before {
@@ -199,26 +197,26 @@
 .label {
   position: absolute;
   z-index: 1;
-  right: 25px; 
+  right: 25px;
   top: 25px;
   font-family: var(--accent-font-family, fantasy);
   color: var(--label-color);
   font-size: 14px;
-  text-shadow: 
-  -1px 0 var(--label-stroke-color),  
-  0 1px var(--label-stroke-color),  
-  1px 0 var(--label-stroke-color),  
-  0 -1px var(--label-stroke-color);
+  text-shadow: -1px 0 var(--label-stroke-color), 0 1px var(--label-stroke-color),
+    1px 0 var(--label-stroke-color), 0 -1px var(--label-stroke-color);
   mix-blend-mode: hard-light;
 }
 
-@supports((text-stroke: 1px var(--label-stroke-color)) or (-webkit-text-stroke: 1px var(--label-stroke-color))) {
+@supports (
+  (text-stroke: 1px var(--label-stroke-color)) or
+    (-webkit-text-stroke: 1px var(--label-stroke-color))
+) {
   .label {
     -webkit-text-stroke: 1px var(--label-stroke-color);
     text-stroke: 1px var(--label-stroke-color);
     text-shadow: none;
   }
-} 
+}
 
 .card_image {
   width: 100%;
